@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Header Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            position: fixed; /* biar tetap di atas */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            color: #00adb5;
+        }
+
+        /* BANNER FULL LAYAR */
+        .banner {
+            height: 100vh; /* full layar */
+            background: url('bannerdimsum.webp') no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="logodmsm.jpeg" alt="Logo">
+    </div>
+
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">Profil</a>
+        <a href="#">Produk</a>
+    </nav>
+</header>
+
+<!-- BANNER -->
+<section class="banner"></section>
+
+</body>
+</html>
